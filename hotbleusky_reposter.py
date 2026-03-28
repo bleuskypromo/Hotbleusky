@@ -864,10 +864,10 @@ def main():
         [(k, v) for k, v in PROCESS_ORDER.items() if v > 0],
         key=lambda x: x[1]
     )
-group_posted_count: Dict[str, int] = {k: 0 for k in buckets.keys()}
+group_posted_count = {k: 0 for k in buckets.keys()}
 
-    for group_name, _ in ordered_groups:
-        group = buckets.get(group_name, [])
+for group_name, _ in ordered_groups:   ✅
+    group = buckets.get(group_name, [])
 
         for c in group:
             if total_done >= MAX_PER_RUN:
