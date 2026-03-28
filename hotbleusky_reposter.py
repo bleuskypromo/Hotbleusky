@@ -851,7 +851,7 @@ def main():
     )
 
 total_done = 0
-    per_user_count: Dict[str, int] = {}
+per_user_count: Dict[str, int] = {}
 
     buckets = {
         "normal": normal_cands,
