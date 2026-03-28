@@ -866,7 +866,7 @@ def main():
     )
 group_posted_count = {k: 0 for k in buckets.keys()}
 
-for group_name, _ in ordered_groups:   ✅
+for group_name, _ in ordered_groups:
     group = buckets.get(group_name, [])
 
         for c in group:
