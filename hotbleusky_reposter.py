@@ -853,7 +853,7 @@ def main():
     total_done = 0
     per_user_count: Dict[str, int] = {}
 
-    buckets = {
+    buckets ={
         "normal": normal_cands,
         "promo_feed": promo_feed_cands,
         "promo_latest": promo_latest_cands,
