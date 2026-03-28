@@ -822,7 +822,9 @@ def main():
             build_candidates_from_postviews(hashtag_posts, cutoff, exclude_handles, exclude_dids)
         )
 
+# ============================================================
     # gezamenlijke tijdlijn
+    # ============================================================
     seen: Set[str] = set()
     deduped: List[Dict] = []
     for c in all_candidates:
@@ -850,8 +852,11 @@ def main():
         f"| promo_latest={len(promo_latest_cands)} | promo_random={len(promo_random_cands)}"
     )
 
-total_done = 0
-per_user_count: Dict[str, int] = {}
+    # ============================================================
+    # POSTING
+    # ============================================================
+    total_done = 0
+    per_user_count: Dict[str, int] = {}
 
     buckets = {
         "normal": normal_cands,
@@ -900,13 +905,11 @@ per_user_count: Dict[str, int] = {}
                 if not is_promo and not is_exempt:
                     per_user_count[ak] += 1
 
-                log(f"✅ {group_name.upper()} repost: {c['uri']}")
+                log(f"Repost [{group_name}]: {c['uri']}")
                 time.sleep(SLEEP_SECONDS)
 
     log(
-        "📊 Posted per group: "
-        + " | ".join(f"{k}={group_posted_count.get(k, 0)}" for k in buckets.keys())
-    )
+        "Posted per group: "
         + " | ".join(f"{k}={group_posted_count.get(k, 0)}" for k in buckets.keys())
     )
 
@@ -914,14 +917,3 @@ per_user_count: Dict[str, int] = {}
     state["like_records"] = like_records
     save_state(STATE_FILE, state)
     log(f"🔥 Done — total reposts this run: {total_done}")
-
-
-if __name__ == "__main__":
-    try:
-        print("=== ABOUT TO CALL MAIN ===", flush=True)
-        main()
-    except Exception:
-        import traceback
-        print("=== FATAL ERROR ===", flush=True)
-        traceback.print_exc()
-        raise
