@@ -40,7 +40,7 @@ print("=== HOTBLEUSKY BOT STARTED ===", flush=True)
 
 FEEDS = {
     "feed 1": {"link": "", "note": "PROMO FEED"},
-    "feed 2": {"link": "", "note": ""},
+    "feed 2": {"link": "https://bsky.app/profile/did:plc:jaka644beit3x4vmmg6yysw7/feed/aaae6jfc5w2oi", "note": "redfoxofficial"},
     "feed 3": {"link": "", "note": ""},
     "feed 4": {"link": "", "note": ""},
     "feed 5": {"link": "", "note": ""},
@@ -60,7 +60,7 @@ ALLOW_REPLY_FEEDS = {"feed 2", "feed 3"}
 # ============================================================
 
 LIJSTEN = {
-    "lijst 1": {"link": "", "note": "PROMO RANDOM"},
+    "lijst 1": {"link": "https://bsky.app/profile/did:plc:5tbowzedh5d6wvhc5dncydbx/lists/3mi5g6vsunc26", "note": "PROMO RANDOM"},
     "lijst 2": {"link": "", "note": ""},
     "lijst 3": {"link": "", "note": ""},
     "lijst 4": {"link": "", "note": ""},
@@ -69,7 +69,7 @@ LIJSTEN = {
     "lijst 7": {"link": "", "note": ""},
     "lijst 8": {"link": "", "note": ""},
     "lijst 9": {"link": "", "note": ""},
-    "lijst 10": {"link": "", "note": "PROMO LATEST"},
+    "lijst 10": {"link": "https://bsky.app/profile/did:plc:5tbowzedh5d6wvhc5dncydbx/lists/3mi5g7i7bp32y", "note": "PROMO LATEST"},
 }
 
 # ============================================================
@@ -78,7 +78,7 @@ LIJSTEN = {
 # ============================================================
 
 HASHTAGS = [
-    "",
+    "#bskypromo",
     "",
     "",
 ]
@@ -90,7 +90,7 @@ HASHTAGS = [
 # ============================================================
 
 EXCLUDE_LISTS = {
-    "exclude 1": {"link": "", "note": "blacklist / spam"},
+    "exclude 1": {"link": "https://bsky.app/profile/did:plc:5tbowzedh5d6wvhc5dncydbx/lists/3mi5garmjx226", "note": "blacklist / spam"},
     "exclude 2": {"link": "", "note": ""},
     "exclude 3": {"link": "", "note": ""},
 }
