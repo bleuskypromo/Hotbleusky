@@ -850,10 +850,10 @@ def main():
         f"| promo_latest={len(promo_latest_cands)} | promo_random={len(promo_random_cands)}"
     )
 
-    total_done = 0
+total_done = 0
     per_user_count: Dict[str, int] = {}
 
-    buckets ={
+    buckets = {
         "normal": normal_cands,
         "promo_feed": promo_feed_cands,
         "promo_latest": promo_latest_cands,
@@ -864,10 +864,11 @@ def main():
         [(k, v) for k, v in PROCESS_ORDER.items() if v > 0],
         key=lambda x: x[1]
     )
-group_posted_count = {k: 0 for k in buckets.keys()}
 
-for group_name, _ in ordered_groups:
-    group = buckets.get(group_name, [])
+    group_posted_count: Dict[str, int] = {k: 0 for k in buckets.keys()}
+
+    for group_name, _ in ordered_groups:
+        group = buckets.get(group_name, [])
 
         for c in group:
             if total_done >= MAX_PER_RUN:
@@ -904,6 +905,8 @@ for group_name, _ in ordered_groups:
 
     log(
         "📊 Posted per group: "
+        + " | ".join(f"{k}={group_posted_count.get(k, 0)}" for k in buckets.keys())
+    )
         + " | ".join(f"{k}={group_posted_count.get(k, 0)}" for k in buckets.keys())
     )
 
