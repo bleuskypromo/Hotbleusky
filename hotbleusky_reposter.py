@@ -913,7 +913,18 @@ def main():
         + " | ".join(f"{k}={group_posted_count.get(k, 0)}" for k in buckets.keys())
     )
 
-    state["repost_records"] = repost_records
+state["repost_records"] = repost_records
     state["like_records"] = like_records
     save_state(STATE_FILE, state)
     log(f"🔥 Done — total reposts this run: {total_done}")
+
+
+if __name__ == "__main__":
+    try:
+        print("=== ABOUT TO CALL MAIN ===", flush=True)
+        main()
+    except Exception:
+        import traceback
+        print("=== FATAL ERROR ===", flush=True)
+        traceback.print_exc()
+        raise
