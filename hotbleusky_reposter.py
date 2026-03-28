@@ -913,7 +913,7 @@ def main():
         + " | ".join(f"{k}={group_posted_count.get(k, 0)}" for k in buckets.keys())
     )
 
-state["repost_records"] = repost_records
+    state["repost_records"] = repost_records
     state["like_records"] = like_records
     save_state(STATE_FILE, state)
     log(f"🔥 Done — total reposts this run: {total_done}")
