@@ -1,4 +1,4 @@
-from atproto import Client
+7from atproto import Client
 import os
 import re
 import time
@@ -110,9 +110,9 @@ PROMO_LATEST_LIST_KEY = "lijst 10"
 # ============================================================
 
 PROCESS_ORDER = {
-    "normal": 1,
-    "promo_feed": 2,
-    "promo_latest": 3,
+    "normal": 3,
+    "promo_feed": 1,
+    "promo_latest": 2,
     "promo_random": 4,
 }
 
