@@ -65,7 +65,7 @@ LIJSTEN = {
     "lijst 3": {"link": "https://bsky.app/profile/did:plc:jaka644beit3x4vmmg6yysw7/lists/3mgldgnponw2m", "note": "beautygroep"},
     "lijst 4": {"link": "https://bsky.app/profile/did:plc:zmyydkc2zzznc4smjufuerlx/lists/3mhs2xmxmos2l", "note": "photos"},
     "lijst 5": {"link": "https://bsky.app/profile/did:plc:zmyydkc2zzznc4smjufuerlx/lists/3mhs2vtwixg2q", "note": "photos"},
-    "lijst 6": {"link": "", "note": ""},
+    "lijst 6": {"link": "https://bsky.app/profile/did:plc:db645kt5coo7teuoxdjhq34x/lists/3lk7nv7qmw42g", "note": "babes realnsfw"},
     "lijst 7": {"link": "", "note": ""},
     "lijst 8": {"link": "", "note": ""},
     "lijst 9": {"link": "", "note": ""},
