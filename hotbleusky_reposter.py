@@ -61,8 +61,8 @@ ALLOW_REPLY_FEEDS = {"feed 2", "feed 3"}
 
 LIJSTEN = {
     "lijst 1": {"link": "https://bsky.app/profile/did:plc:5tbowzedh5d6wvhc5dncydbx/lists/3mi5g6vsunc26", "note": "PROMO RANDOM"},
-    "lijst 2": {"link": "https://bsky.app/profile/did:plc:jaka644beit3x4vmmg6yysw7/lists/3m3iga6wnmz2p", "note": "Beautygroup"},
-    "lijst 3": {"link": "https://bsky.app/profile/did:plc:jaka644beit3x4vmmg6yysw7/lists/3mgldgnponw2m", "note": "beautygroep"},
+    "lijst 2": {"link": "", "note": ""},
+    "lijst 3": {"link": "", "note": ""},
     "lijst 4": {"link": "https://bsky.app/profile/did:plc:zmyydkc2zzznc4smjufuerlx/lists/3mhs2xmxmos2l", "note": "photos"},
     "lijst 5": {"link": "https://bsky.app/profile/did:plc:zmyydkc2zzznc4smjufuerlx/lists/3mhs2vtwixg2q", "note": "photos"},
     "lijst 6": {"link": "https://bsky.app/profile/did:plc:db645kt5coo7teuoxdjhq34x/lists/3lk7nv7qmw42g", "note": "babes realnsfw"},
