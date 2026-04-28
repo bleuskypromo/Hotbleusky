@@ -40,7 +40,7 @@ print("=== HOTBLEUSKY BOT STARTED ===", flush=True)
 
 FEEDS = {
     "feed 1": {"link": "", "note": "PROMO FEED"},
-    "feed 2": {"link": "https://bsky.app/profile/did:plc:jaka644beit3x4vmmg6yysw7/feed/aaae6jfc5w2oi", "note": "redfoxofficial"},
+    "feed 2": {"link": "", "note": ""},
     "feed 3": {"link": "", "note": ""},
     "feed 4": {"link": "", "note": ""},
     "feed 5": {"link": "", "note": ""},
@@ -63,8 +63,8 @@ LIJSTEN = {
     "lijst 1": {"link": "https://bsky.app/profile/did:plc:5tbowzedh5d6wvhc5dncydbx/lists/3mi5g6vsunc26", "note": "PROMO RANDOM"},
     "lijst 2": {"link": "", "note": ""},
     "lijst 3": {"link": "", "note": ""},
-    "lijst 4": {"link": "https://bsky.app/profile/did:plc:zmyydkc2zzznc4smjufuerlx/lists/3mhs2xmxmos2l", "note": "photos"},
-    "lijst 5": {"link": "https://bsky.app/profile/did:plc:zmyydkc2zzznc4smjufuerlx/lists/3mhs2vtwixg2q", "note": "photos"},
+    "lijst 4": {"link": "", "note": "photos"},
+    "lijst 5": {"link": "https://bsky.app/profile/did:plc:zmyydkc2zzznc4smjufuerlx/lists/3mhs2vtwixg2q", "note": ""},
     "lijst 6": {"link": "https://bsky.app/profile/did:plc:db645kt5coo7teuoxdjhq34x/lists/3lk7nv7qmw42g", "note": "babes realnsfw"},
     "lijst 7": {"link": "", "note": ""},
     "lijst 8": {"link": "", "note": ""},
