@@ -1,6 +1,6 @@
 name: HotBleusky Bot
 
-on:
+off:
   schedule:
     - cron: "35 * * * *"
   workflow_dispatch:
