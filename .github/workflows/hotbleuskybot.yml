@@ -1,6 +1,6 @@
 name: HotBleusky Bot
 
-off:
+on:
   workflow_dispatch:
 
 permissions:
