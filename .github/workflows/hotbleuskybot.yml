@@ -2,7 +2,7 @@ name: HotBleusky Bot
 
 on:
   schedule:
-    - cron: "6 * * * *"
+    - cron: "1 * * * *"
   workflow_dispatch:
 
 
